@@ -5,11 +5,14 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { FeedPage } from "../pages/feed/feed";
+import { SobrePage } from "../pages/sobre/sobre";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FeedPageModule } from "../pages/feed/feed.module";
-import { FeedPage } from "../pages/feed/feed";
+import { SobrePageModule } from "../pages/sobre/sobre.module";
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { FeedPage } from "../pages/feed/feed";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    FeedPageModule,    
+    FeedPageModule,
+    SobrePageModule,    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
